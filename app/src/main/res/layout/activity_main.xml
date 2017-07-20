@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="app.qadheeb.fatimah.quizapp.MainActivity"
+    android:background="@color/backgroundColor"
+    android:id="@+id/activity_main"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView0"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/appTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_view_question_one"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/questionNumberOne" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/trueRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/trueRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/falseRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/falseRadioButton" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_question_two"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/questionNumberTwo" />
+
+        <EditText
+            android:id="@+id/edit_text_answer_question_two"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/hintTextAnswer"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_question_three"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/questionNumberThree" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/plus_button"
+                style="@style/ButtonStyleIncDec"
+
+                android:onClick="increment"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/legs_num_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/subtraction_button"
+                style="@style/ButtonStyleIncDec"
+
+                android:onClick="decrement"
+                android:text="-"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_question_four"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/questionNumberFour" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+        <CheckBox
+            android:text="@string/fishCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/fish_check_box"
+            android:layout_weight="1" />
+        <CheckBox
+            android:text="@string/antCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ant_check_box"
+            android:layout_weight="1" />
+            <CheckBox
+                android:text="@string/sharkCheckBox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/shark_check_box"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/ButtonStyleSubmitReset"
+            android:background="@color/buttonColor"
+            android:onClick="submitButton"
+            android:text="@string/submitButton" />
+
+        <Button
+            android:id="@+id/Reset"
+            style="@style/ButtonStyleSubmitReset"
+            android:onClick="resetButton"
+            android:text="@string/resetButton"
+
+            />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>

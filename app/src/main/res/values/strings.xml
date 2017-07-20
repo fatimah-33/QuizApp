@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="appTitle">Animal Quiz</string>
+    <string name="trueRadioButton">True</string>
+    <string name="falseRadioButton">False</string>
+    <string name="hintTextAnswer">Write your answer here</string>
+    <string name="questionNumberOne">True of false? Snakes have slimy skin</string>
+    <string name="questionNumberTwo">What is the tallest animal in the world?</string>
+    <string name="questionNumberThree">How many legs does a spider have?</string>
+    <string name="questionNumberFour">Choose animals that can swim in the water?</string>
+    <string name="submitButton">Submit</string>
+    <string name="resetButton">Reset</string>
+    <string name="fishCheckBox">Fish</string>
+    <string name="sharkCheckBox">Shark</string>
+    <string name="antCheckBox">Ant</string>
+
+
+
+
+
+</resources>
