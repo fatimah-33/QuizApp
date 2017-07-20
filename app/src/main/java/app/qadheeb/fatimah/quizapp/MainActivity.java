@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox hasCheckedShark;
     private CheckBox hasCheckedAnt;
     private int result;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,10 +56,9 @@ public class MainActivity extends AppCompatActivity {
         if (legsNumTextView.getText() == "8") {
             result++;
         }
-        if (hasCheckedFish.isChecked() && hasCheckedShark.isChecked() && hasCheckedAnt.isChecked()==false) {
+        if (hasCheckedFish.isChecked() && hasCheckedShark.isChecked() && hasCheckedAnt.isChecked() == false) {
             result++;
         }
-
         switch (result) {
             case 1:
                 Toast.makeText(this, "Needs Improvement, you have got 1 out 4", Toast.LENGTH_SHORT).show();
